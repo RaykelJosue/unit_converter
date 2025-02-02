@@ -50,7 +50,7 @@
     ```
 
 4. **Abrir el frontend desde Live Server (si estás en Visual Studio Code):**
-    Abre index.html en tu navegador
+    En el Visual Studio Code, debes estar en la ventana del index.html para ejecutar el frontend desde el Live Server.
 
 ## Uso 🖱️
 
