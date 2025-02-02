@@ -41,7 +41,7 @@
 
 2. **Instalar dependencias:**
     ```bash
-    pip install flask flask-cors
+    pip install -r requirements.txt
     ```
 
 3. **Iniciar el servidor backend:**
