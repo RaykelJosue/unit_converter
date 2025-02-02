@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📏 Conversor de Unidades</h1>
+
+        <!-- Sección de Longitud -->
+        <section class="converter-box">
+            <h2>Longitud</h2>
+            <form id="lengthForm" onsubmit="return convert('length', event)">
+                <input type="number" id="lengthValue" placeholder="Valor" required>
+                <select id="lengthFrom">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m" selected>Metro (m)</option>
+                    <option value="km">Kilómetro (km)</option>
+                    <option value="in">Pulgada (in)</option>
+                    <option value="ft">Pie (ft)</option>
+                    <option value="yd">Yarda (yd)</option>
+                    <option value="mi">Milla (mi)</option>
+                </select>
+                <span>a</span>
+                <select id="lengthTo">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km" selected>Kilómetro (km)</option>
+                    <option value="in">Pulgada (in)</option>
+                    <option value="ft">Pie (ft)</option>
+                    <option value="yd">Yarda (yd)</option>
+                    <option value="mi">Milla (mi)</option>
+                </select>
+                <button type="submit">Convertir</button>
+            </form>
+            <p id="lengthResult">Resultado: </p>
+        </section>
+
+        <!-- Sección de Peso -->
+        <section class="converter-box">
+            <h2>Peso</h2>
+            <form id="weightForm" onsubmit="return convert('weight', event)">
+                <input type="number" id="weightValue" placeholder="Valor" required>
+                <select id="weightFrom">
+                    <option value="mg">Miligramo (mg)</option>
+                    <option value="g">Gramo (g)</option>
+                    <option value="kg" selected>Kilogramo (kg)</option>
+                    <option value="oz">Onza (oz)</option>
+                    <option value="lb">Libra (lb)</option>
+                </select>
+                <span>a</span>
+                <select id="weightTo">
+                    <option value="mg">Miligramo (mg)</option>
+                    <option value="g">Gramo (g)</option>
+                    <option value="kg">Kilogramo (kg)</option>
+                    <option value="oz" selected>Onza (oz)</option>
+                    <option value="lb">Libra (lb)</option>
+                </select>
+                <button type="submit">Convertir</button>
+            </form>
+            <p id="weightResult">Resultado: </p>
+        </section>
+
+        <!-- Sección de Temperatura (IDs corregidos) -->
+        <section class="converter-box">
+            <h2>Temperatura</h2>
+            <form id="temperatureForm" onsubmit="return convert('temperature', event)">
+                <input type="number" id="temperatureValue" placeholder="Valor" required>
+                <select id="temperatureFrom">
+                    <option value="C" selected>Celsius (°C)</option>
+                    <option value="F">Fahrenheit (°F)</option>
+                    <option value="K">Kelvin (K)</option>
+                </select>
+                <span>a</span>
+                <select id="temperatureTo">
+                    <option value="C">Celsius (°C)</option>
+                    <option value="F" selected>Fahrenheit (°F)</option>
+                    <option value="K">Kelvin (K)</option>
+                </select>
+                <button type="submit">Convertir</button>
+            </form>
+            <p id="temperatureResult">Resultado: </p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
