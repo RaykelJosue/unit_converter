@@ -1,12 +1,6 @@
 # Conversor de Unidades Web 🌐📏⚖️🌡️  
 *Aplicación web para convertir entre unidades de longitud, peso y temperatura.*
 
-## Tabla de Contenidos 📑
-- [Características](#características-)
-- [Tecnologías](#tecnologías-)
-- [Instalación](#instalación-)
-- [Uso](#uso-)
-
 ---
 
 ## Características ✨
